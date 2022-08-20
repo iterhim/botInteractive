@@ -643,8 +643,9 @@ bot.on('message', async (ctx) => {
                 .placeholder("Продолжить!")
                 .resized()
                 .oneTime();
-            await ctx.reply(text['9'], {
+            await ctx.replyWithPhoto(new InputFile("./photos/4 1.png"), {
                 reply_markup: keyboard,
+                caption: text['9']
             });
 
         }
@@ -672,8 +673,9 @@ bot.on('message', async (ctx) => {
                 .placeholder("Продолжить!")
                 .resized()
                 .oneTime();
-            await ctx.reply(text['9'], {
+            await ctx.replyWithPhoto(new InputFile("./photos/4 1.png"), {
                 reply_markup: keyboard,
+                caption: text['9']
             });
         }
         if (ctx.message.text === '3️⃣') {
